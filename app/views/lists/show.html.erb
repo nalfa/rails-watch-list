@@ -1,0 +1,13 @@
+<h1>Lists#show</h1>
+<p>Find me in app/views/lists/show.html.erb</p>
+
+<ul>
+  <% @list.movies.each do |movie| %>
+    <li><%= movie.title %></li>
+    <%= link_to "Delete",
+            list_bookmark_path(params[:id]),
+            method: :delete,
+            data: { confirm: "Are you sure?" },
+            class: 'text-decoration-none' %>
+  <% end %>
+</ul>
