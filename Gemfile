@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.3'
 
+#Use for storing secrets
+gem 'dotenv-rails', groups: [:development, :test]
 # Use for populating the db with dummy data
 gem 'faker'
 # required gems from le wagon setup
