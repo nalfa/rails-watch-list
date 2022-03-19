@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= cl_image_path('movie_ta6gxx.jpg') %>);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path('movie_ta6gxx.jpg') %>);">
   <div class="container">
     <h1>Movies Watch List</h1>
     <p>Create lists of movies to watch.</p>
@@ -17,7 +17,7 @@
             <% if list.photo.attached? %>
               <div class="card card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path(list.photo.key) %>);">
             <% else %>
-              <div class="card card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path('sample.jpg') %>);">
+              <div class="card card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('sample.jpg') %>);">
             <% end %>
                 <%= list.name %>
               </div>
