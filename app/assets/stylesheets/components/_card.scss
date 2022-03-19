@@ -18,6 +18,7 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 475px;
 }
 
 .card-movie > img {
@@ -44,4 +45,12 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+}
+
+.card-movie .card-movie-heading {
+  padding: 16px 16px 0px 16px;
+}
+
+.card-movie-pricing {
+  font-size: 12px;
 }
